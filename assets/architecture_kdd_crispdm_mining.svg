@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="100%" height="100%">
+  <defs>
+    <filter id="m3-shadow-mining" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
+    <marker id="arr-kdd" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1565C0"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="400" rx="16" fill="#F8F9FA"/>
+  <rect x="1" y="1" width="958" height="398" rx="15" fill="none" stroke="#E0E0E0" stroke-width="1.5"/>
+
+  <!-- Header Banner -->
+  <rect x="0" y="0" width="960" height="48" rx="16" fill="#00695C"/>
+  <rect x="0" y="32" width="960" height="16" fill="#00695C"/>
+  <text x="24" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">MINERAÇÃO DE DADOS (COM360) — MAPA METODOLÓGICO KDD &amp; CICLO CRISP-DM</text>
+  <rect x="760" y="12" width="176" height="24" rx="12" fill="#E0F2F1"/>
+  <text x="848" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#00695C" text-anchor="middle">CIÊNCIA DE DADOS APLICADA</text>
+
+  <!-- KDD Linear Pipeline (Top) -->
+  <g transform="translate(30, 70)" filter="url(#m3-shadow-mining)">
+    <rect width="900" height="135" rx="12" fill="#FFFFFF" stroke="#B2DFDB" stroke-width="1.5"/>
+    <rect width="900" height="30" rx="12" fill="#E0F2F1"/>
+    <rect y="18" width="900" height="12" fill="#E0F2F1"/>
+    <text x="20" y="20" font-family="Roboto, sans-serif" font-size="11" font-weight="700" fill="#004D40">FRAMEWORK KDD (KNOWLEDGE DISCOVERY IN DATABASES) — FLUXO TÉCNICO E CIENTÍFICO</text>
+
+    <!-- KDD Steps -->
+    <g transform="translate(20, 45)">
+      <!-- Step 1: Raw Data -->
+      <rect x="0" y="0" width="150" height="70" rx="8" fill="#F8F9FA" stroke="#DADCE0"/>
+      <text x="75" y="20" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#202124" text-anchor="middle">1. Dados Brutos (Raw)</text>
+      <text x="75" y="36" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">Bases transacionais, CSVs,</text>
+      <text x="75" y="48" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">CRM &amp; Eventos Web</text>
+      <text x="75" y="62" font-family="Roboto, sans-serif" font-size="8" font-weight="700" fill="#1967D2" text-anchor="middle">Camada Bronze</text>
+
+      <path d="M 152 35 L 175 35" stroke="#1565C0" stroke-width="2" marker-end="url(#arr-kdd)"/>
+
+      <!-- Step 2: Pré-processamento -->
+      <rect x="180" y="0" width="165" height="70" rx="8" fill="#E8F0FE" stroke="#AECBFA"/>
+      <text x="262" y="20" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#1565C0" text-anchor="middle">2. Pré-processamento</text>
+      <text x="262" y="35" font-family="Roboto, sans-serif" font-size="8" fill="#3C4043" text-anchor="middle">Tratamento de incompletude (imputação)</text>
+      <text x="262" y="47" font-family="Roboto, sans-serif" font-size="8" fill="#3C4043" text-anchor="middle">Remoção de ruídos &amp; outliers (IQR)</text>
+      <text x="262" y="62" font-family="Roboto, sans-serif" font-size="8" font-weight="700" fill="#1967D2" text-anchor="middle">Camada Silver</text>
+
+      <path d="M 347 35 L 370 35" stroke="#1565C0" stroke-width="2" marker-end="url(#arr-kdd)"/>
+
+      <!-- Step 3: Transformação -->
+      <rect x="375" y="0" width="160" height="70" rx="8" fill="#F3E5F5" stroke="#CE93D8"/>
+      <text x="455" y="20" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#7B1FA2" text-anchor="middle">3. Transformação &amp; Redução</text>
+      <text x="455" y="35" font-family="Roboto, sans-serif" font-size="8" fill="#3C4043" text-anchor="middle">Normalização (Z-Score, Min-Max)</text>
+      <text x="455" y="47" font-family="Roboto, sans-serif" font-size="8" fill="#3C4043" text-anchor="middle">Discretização (Binning), PCA</text>
+      <text x="455" y="62" font-family="Roboto, sans-serif" font-size="8" font-weight="700" fill="#7B1FA2" text-anchor="middle">Engenharia de Atributos</text>
+
+      <path d="M 537 35 L 560 35" stroke="#1565C0" stroke-width="2" marker-end="url(#arr-kdd)"/>
+
+      <!-- Step 4: Mineração de Dados -->
+      <rect x="565" y="0" width="150" height="70" rx="8" fill="#FFF8E1" stroke="#FFE082"/>
+      <text x="640" y="20" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#B78103" text-anchor="middle">4. Mineração de Dados</text>
+      <text x="640" y="35" font-family="Roboto, sans-serif" font-size="8" fill="#3C4043" text-anchor="middle">Algoritmos de classificação,</text>
+      <text x="640" y="47" font-family="Roboto, sans-serif" font-size="8" fill="#3C4043" text-anchor="middle">agrupamento, regressão</text>
+      <text x="640" y="62" font-family="Roboto, sans-serif" font-size="8" font-weight="700" fill="#B78103" text-anchor="middle">Modelos Preditivos / Gold</text>
+
+      <path d="M 717 35 L 740 35" stroke="#1565C0" stroke-width="2" marker-end="url(#arr-kdd)"/>
+
+      <!-- Step 5: Conhecimento -->
+      <rect x="745" y="0" width="115" height="70" rx="8" fill="#E8F5E9" stroke="#A5D6A7"/>
+      <text x="802" y="20" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#2E7D32" text-anchor="middle">5. Conhecimento</text>
+      <text x="802" y="35" font-family="Roboto, sans-serif" font-size="8" fill="#3C4043" text-anchor="middle">Padrões válidos,</text>
+      <text x="802" y="47" font-family="Roboto, sans-serif" font-size="8" fill="#3C4043" text-anchor="middle">KPIs acionáveis</text>
+      <text x="802" y="62" font-family="Roboto, sans-serif" font-size="8" font-weight="700" fill="#2E7D32" text-anchor="middle">Valor Estratégico</text>
+    </g>
+  </g>
+
+  <!-- CRISP-DM Cycle (Bottom) -->
+  <g transform="translate(30, 220)" filter="url(#m3-shadow-mining)">
+    <rect width="900" height="155" rx="12" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="1.5"/>
+    <rect width="900" height="30" rx="12" fill="#EFEBE9"/>
+    <rect y="18" width="900" height="12" fill="#EFEBE9"/>
+    <text x="20" y="20" font-family="Roboto, sans-serif" font-size="11" font-weight="700" fill="#4E342E">METODOLOGIA CRISP-DM — CICLO DE VALOR DE NEGÓCIO APLICADO AO ANALYTICS</text>
+
+    <!-- CRISP-DM 6 Pillars Grid -->
+    <g transform="translate(15, 45)">
+      <!-- 1. Business Understanding -->
+      <rect x="0" y="0" width="138" height="95" rx="8" fill="#F8F9FA" stroke="#E0E0E0"/>
+      <text x="69" y="18" font-family="Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#202124" text-anchor="middle">1. Business Und.</text>
+      <text x="69" y="34" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">Definição de metas,</text>
+      <text x="69" y="46" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">OKRs, regras de negócio</text>
+      <text x="69" y="58" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">e critérios de sucesso.</text>
+      <text x="69" y="78" font-family="Roboto, sans-serif" font-size="8" font-weight="600" fill="#1A73E8" text-anchor="middle">Ex: CAC, LTV, ROAS</text>
+
+      <!-- 2. Data Understanding -->
+      <rect x="146" y="0" width="138" height="95" rx="8" fill="#F8F9FA" stroke="#E0E0E0"/>
+      <text x="215" y="18" font-family="Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#202124" text-anchor="middle">2. Data Und.</text>
+      <text x="215" y="34" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">Auditoria de tracking,</text>
+      <text x="215" y="46" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">identificação de gaps,</text>
+      <text x="215" y="58" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">EDA e distribuições.</text>
+      <text x="215" y="78" font-family="Roboto, sans-serif" font-size="8" font-weight="600" fill="#1A73E8" text-anchor="middle">Ex: Quebras de UTM</text>
+
+      <!-- 3. Data Preparation -->
+      <rect x="292" y="0" width="138" height="95" rx="8" fill="#F8F9FA" stroke="#E0E0E0"/>
+      <text x="361" y="18" font-family="Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#202124" text-anchor="middle">3. Data Preparation</text>
+      <text x="361" y="34" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">Pipelines ELT, limpeza,</text>
+      <text x="361" y="46" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">deduplicação de chaves</text>
+      <text x="361" y="58" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">e modelagem tabular.</text>
+      <text x="361" y="78" font-family="Roboto, sans-serif" font-size="8" font-weight="600" fill="#1A73E8" text-anchor="middle">Ex: Dataform SQLX</text>
+
+      <!-- 4. Modeling -->
+      <rect x="438" y="0" width="138" height="95" rx="8" fill="#F8F9FA" stroke="#E0E0E0"/>
+      <text x="507" y="18" font-family="Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#202124" text-anchor="middle">4. Modeling</text>
+      <text x="507" y="34" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">Modelos analíticos,</text>
+      <text x="507" y="46" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">funis intraday e</text>
+      <text x="507" y="58" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">algoritmos de ML.</text>
+      <text x="507" y="78" font-family="Roboto, sans-serif" font-size="8" font-weight="600" fill="#1A73E8" text-anchor="middle">Ex: Funil Águia Branca</text>
+
+      <!-- 5. Evaluation -->
+      <rect x="584" y="0" width="138" height="95" rx="8" fill="#F8F9FA" stroke="#E0E0E0"/>
+      <text x="653" y="18" font-family="Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#202124" text-anchor="middle">5. Evaluation</text>
+      <text x="653" y="34" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">Reconciliação diária,</text>
+      <text x="653" y="46" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">validação cruzada k-fold</text>
+      <text x="653" y="58" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">e assertions de negócio.</text>
+      <text x="653" y="78" font-family="Roboto, sans-serif" font-size="8" font-weight="600" fill="#137333" text-anchor="middle">Ex: Paridade &gt;98%</text>
+
+      <!-- 6. Deployment -->
+      <rect x="730" y="0" width="138" height="95" rx="8" fill="#E8F5E9" stroke="#C8E6C9"/>
+      <text x="799" y="18" font-family="Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#1B5E20" text-anchor="middle">6. Deployment</text>
+      <text x="799" y="34" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">Dashboards Metabase,</text>
+      <text x="799" y="46" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">Tags GTM em produção,</text>
+      <text x="799" y="58" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">alertas no Slack.</text>
+      <text x="799" y="78" font-family="Roboto, sans-serif" font-size="8" font-weight="700" fill="#2E7D32" text-anchor="middle">Ex: Cloud Run + MCP</text>
+    </g>
+  </g>
+</svg>

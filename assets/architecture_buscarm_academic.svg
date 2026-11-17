@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="100%" height="100%">
+  <defs>
+    <filter id="m3-shadow-buscarm" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
+    <marker id="arr-hex" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1A73E8"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="420" rx="16" fill="#F8F9FA"/>
+  <rect x="1" y="1" width="958" height="418" rx="15" fill="none" stroke="#E0E0E0" stroke-width="1.5"/>
+
+  <!-- Header Banner -->
+  <rect x="0" y="0" width="960" height="48" rx="16" fill="#1565C0"/>
+  <rect x="0" y="32" width="960" height="16" fill="#1565C0"/>
+  <text x="24" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">BUSCARM (PROJETO INTEGRADOR II - UNIVESP) — ARQUITETURA WEB HEXAGONAL &amp; OCR</text>
+  <rect x="760" y="12" width="176" height="24" rx="12" fill="#BBDEFB"/>
+  <text x="848" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0D47A1" text-anchor="middle">PORTS &amp; ADAPTERS</text>
+
+  <!-- 4 Columns / Topology Layers -->
+  <!-- Col 1: Frontend Next.js 14 -->
+  <g transform="translate(30, 70)" filter="url(#m3-shadow-buscarm)">
+    <rect width="190" height="320" rx="12" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1.5"/>
+    <rect width="190" height="36" rx="12" fill="#E3F2FD"/>
+    <rect y="24" width="190" height="12" fill="#E3F2FD"/>
+    <text x="95" y="23" font-family="Roboto, sans-serif" font-size="12" font-weight="700" fill="#1565C0" text-anchor="middle">FRONTEND (NEXT.JS 14)</text>
+
+    <rect x="12" y="55" width="166" height="65" rx="8" fill="#F8F9FA" stroke="#BBDEFB"/>
+    <text x="22" y="75" font-family="Roboto, sans-serif" font-size="11" font-weight="700" fill="#0D47A1">Feature-Sliced Design</text>
+    <text x="22" y="90" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">app ➔ features ➔ entities ➔ shared</text>
+    <text x="22" y="104" font-family="Roboto, sans-serif" font-size="8.5" fill="#1976D2">React 18 · TypeScript · Vercel</text>
+
+    <rect x="12" y="130" width="166" height="85" rx="8" fill="#F8F9FA" stroke="#BBDEFB"/>
+    <text x="22" y="150" font-family="Roboto, sans-serif" font-size="11" font-weight="700" fill="#0D47A1">Módulos de Interface</text>
+    <text x="22" y="166" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">• Busca instantânea Nome ➔ RM</text>
+    <text x="22" y="180" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">• Upload drag &amp; drop de planilhas</text>
+    <text x="22" y="194" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">• Pré-visualização de OCR de fotos</text>
+    <text x="22" y="208" font-family="Roboto, sans-serif" font-size="8.5" fill="#137333">Validação humana antes de gravar</text>
+
+    <rect x="12" y="225" width="166" height="80" rx="8" fill="#E3F2FD"/>
+    <text x="22" y="245" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#1565C0">Segurança &amp; RBAC</text>
+    <text x="22" y="260" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">JWT stateless em cabeçalhos</text>
+    <text x="22" y="274" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Controle de visualização por perfil:</text>
+    <text x="22" y="288" font-family="Roboto, sans-serif" font-size="8.5" font-weight="600" fill="#0D47A1">ADMIN · SECRETARIA · VISUALIZADOR</text>
+  </g>
+
+  <!-- Connector Frontend -> Backend -->
+  <path d="M 220 220 L 260 220" stroke="#1A73E8" stroke-width="2" fill="none" marker-end="url(#arr-hex)"/>
+
+  <!-- Col 2: Backend Hexagonal (Spring Boot 3.3 / Java 21) -->
+  <g transform="translate(260, 70)" filter="url(#m3-shadow-buscarm)">
+    <rect width="250" height="320" rx="12" fill="#FFFFFF" stroke="#C8E6C9" stroke-width="1.5"/>
+    <rect width="250" height="36" rx="12" fill="#E8F5E9"/>
+    <rect y="24" width="250" height="12" fill="#E8F5E9"/>
+    <text x="125" y="23" font-family="Roboto, sans-serif" font-size="12" font-weight="700" fill="#2E7D32" text-anchor="middle">BACKEND HEXAGONAL (JAVA 21)</text>
+
+    <!-- Ports & Adapters Box -->
+    <rect x="12" y="55" width="226" height="75" rx="8" fill="#F1F8E9" stroke="#C5E1A5"/>
+    <text x="22" y="75" font-family="Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#1B5E20">Ports &amp; Adapters Pattern</text>
+    <text x="22" y="90" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Domínio e regras isolados de frameworks</text>
+    <text x="22" y="104" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Package-by-feature (registro, importação, segurança)</text>
+    <text x="22" y="118" font-family="Roboto, sans-serif" font-size="8.5" fill="#33691E">Spring Boot 3.3 · Spring Data JPA · Flyway</text>
+
+    <!-- Normalization & Search Engine -->
+    <rect x="12" y="140" width="226" height="80" rx="8" fill="#F1F8E9" stroke="#C5E1A5"/>
+    <text x="22" y="160" font-family="Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#1B5E20">Busca e Normalização</text>
+    <text x="22" y="176" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Indexador NomeNormalizer: minúsculas, sem acento</text>
+    <text x="22" y="190" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Armazena nome_completo e nome_busca</text>
+    <text x="22" y="204" font-family="Roboto, sans-serif" font-size="8.5" fill="#33691E">Busca otimizada em milissegundos sobre 6.000+ RMs</text>
+
+    <!-- Audit & Soft Delete -->
+    <rect x="12" y="230" width="226" height="70" rx="8" fill="#E8F5E9"/>
+    <text x="22" y="250" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#1B5E20">Rastreabilidade &amp; Auditoria</text>
+    <text x="22" y="266" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Soft deletes (ativo=false) e histórico de ações</text>
+    <text x="22" y="280" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Relatório de importação com status de cada linha</text>
+  </g>
+
+  <!-- Connector Backend -> Import Pipeline & DB -->
+  <path d="M 510 180 L 550 150" stroke="#1E8E3E" stroke-width="2" fill="none" marker-end="url(#arr-hex)"/>
+  <path d="M 510 280 L 550 310" stroke="#1A73E8" stroke-width="2" fill="none" marker-end="url(#arr-hex)"/>
+
+  <!-- Col 3: Pipeline de Importação Único (OCR + Excel) -->
+  <g transform="translate(550, 70)" filter="url(#m3-shadow-buscarm)">
+    <rect width="210" height="170" rx="12" fill="#FFFFFF" stroke="#FFE082" stroke-width="1.5"/>
+    <rect width="210" height="32" rx="12" fill="#FFF8E1"/>
+    <rect y="20" width="210" height="12" fill="#FFF8E1"/>
+    <text x="105" y="21" font-family="Roboto, sans-serif" font-size="11" font-weight="700" fill="#F57F17" text-anchor="middle">PIPELINE ÚNICO DE IMPORTAÇÃO</text>
+
+    <text x="15" y="52" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#E65100">1. Apache POI &amp; Parser CSV</text>
+    <text x="15" y="66" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Leitura robusta de .xlsx e .csv (RFC 4180)</text>
+
+    <text x="15" y="88" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#E65100">2. Tesseract OCR Nativo (CLI)</text>
+    <text x="15" y="102" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">ProcessBuilder, LSTM neural net, --psm 3</text>
+    <text x="15" y="116" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Extração de RM e nomes de fotos de livros</text>
+
+    <rect x="10" y="128" width="190" height="32" rx="6" fill="#FFF8E1"/>
+    <text x="105" y="143" font-family="Roboto, sans-serif" font-size="8.5" font-weight="700" fill="#F57F17" text-anchor="middle">Validador de Negócio Compartilhado</text>
+    <text x="105" y="154" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">VÁLIDO · INVÁLIDO · DUPLICADO · CONFLITO</text>
+  </g>
+
+  <!-- Col 4: Banco PostgreSQL Neon & Infra -->
+  <g transform="translate(550, 260)" filter="url(#m3-shadow-buscarm)">
+    <rect width="210" height="130" rx="12" fill="#FFFFFF" stroke="#90CAF9" stroke-width="1.5"/>
+    <rect width="210" height="32" rx="12" fill="#E3F2FD"/>
+    <rect y="20" width="210" height="12" fill="#E3F2FD"/>
+    <text x="105" y="21" font-family="Roboto, sans-serif" font-size="11" font-weight="700" fill="#1565C0" text-anchor="middle">BANCO POSTGRESQL &amp; DEPLOY</text>
+
+    <text x="15" y="55" font-family="Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#0D47A1">PostgreSQL Serverless (Neon)</text>
+    <text x="15" y="70" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Índices específicos para busca de texto</text>
+    <text x="15" y="88" font-family="Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#0D47A1">CI/CD &amp; Contêineres</text>
+    <text x="15" y="103" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Docker · GitHub Actions · GHCR · Render</text>
+  </g>
+
+  <!-- Impact summary right side -->
+  <g transform="translate(780, 70)" filter="url(#m3-shadow-buscarm)">
+    <rect width="150" height="320" rx="12" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1.5"/>
+    <rect width="150" height="36" rx="12" fill="#ECEFF1"/>
+    <rect y="24" width="150" height="12" fill="#ECEFF1"/>
+    <text x="75" y="23" font-family="Roboto, sans-serif" font-size="11" font-weight="700" fill="#37474F" text-anchor="middle">IMPACTO REAL</text>
+
+    <rect x="10" y="55" width="130" height="75" rx="8" fill="#F8F9FA"/>
+    <text x="15" y="75" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#263238">Redução de Tempo</text>
+    <text x="15" y="90" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">De 15+ min folheando</text>
+    <text x="15" y="103" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">livro físico para busca</text>
+    <text x="15" y="116" font-family="Roboto, sans-serif" font-size="8.5" font-weight="700" fill="#2E7D32">em &lt; 2 segundos.</text>
+
+    <rect x="10" y="140" width="130" height="80" rx="8" fill="#F8F9FA"/>
+    <text x="15" y="160" font-family="Roboto, sans-serif" font-size="10" font-weight="700" fill="#263238">Fim de Perda de RMs</text>
+    <text x="15" y="175" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Garantia de integridade</text>
+    <text x="15" y="188" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">histórica e digitalização</text>
+    <text x="15" y="201" font-family="Roboto, sans-serif" font-size="8.5" font-weight="700" fill="#2E7D32">do acervo da escola.</text>
+
+    <rect x="10" y="230" width="130" height="75" rx="8" fill="#ECEFF1"/>
+    <text x="75" y="255" font-family="Roboto, sans-serif" font-size="9" font-weight="700" fill="#37474F" text-anchor="middle">Metodologia Ágil</text>
+    <text x="75" y="270" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">Validação colaborativa</text>
+    <text x="75" y="282" font-family="Roboto, sans-serif" font-size="8" fill="#5F6368" text-anchor="middle">com secretárias escolares</text>
+  </g>
+</svg>

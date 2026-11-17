@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio Profissional — Paulo Marcos Ordonha da Silva</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 14mm 14mm 14mm 14mm;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+      line-height: 1.45;
+      font-size: 10pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Header styling */
+    .header {
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      font-size: 20pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+
+    .title-role {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #2563eb;
+      margin-top: 2px;
+    }
+
+    .contact-info {
+      font-size: 8.5pt;
+      color: #475569;
+      display: flex;
+      gap: 12px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    .contact-info a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    /* Summary block */
+    .summary-box {
+      background: #f8fafc;
+      border-left: 4px solid #2563eb;
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 16px;
+      font-size: 9.5pt;
+      color: #334155;
+    }
+
+    /* Section titles */
+    h2 {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-top: 18px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2 .section-badge {
+      display: inline-block;
+      width: 4px;
+      height: 14px;
+      background: #2563eb;
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-top: 10px;
+      margin-bottom: 4px;
+    }
+
+    p {
+      margin-bottom: 6px;
+    }
+
+    /* Cards & Project Blocks */
+    .project-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      page-break-inside: avoid;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .project-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .project-tag {
+      font-size: 7.5pt;
+      font-weight: 600;
+      padding: 2px 8px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-radius: 12px;
+      border: 1px solid #bfdbfe;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .challenge-box, .solution-box {
+      font-size: 9pt;
+      padding: 8px 10px;
+      border-radius: 6px;
+    }
+
+    .challenge-box {
+      background: #fff7ed;
+      border-left: 3px solid #f97316;
+    }
+
+    .solution-box {
+      background: #f0fdf4;
+      border-left: 3px solid #16a34a;
+    }
+
+    .box-title {
+      font-weight: 700;
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .challenge-box .box-title { color: #c2410c; }
+    .solution-box .box-title { color: #15803d; }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0;
+      font-size: 8.5pt;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 600;
+      text-align: left;
+      padding: 6px 8px;
+      border: 1px solid #cbd5e1;
+    }
+
+    td {
+      padding: 6px 8px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-block;
+      font-size: 7.5pt;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin: 1px;
+    }
+    .badge-blue { background: #dbeafe; color: #1e40af; }
+    .badge-green { background: #dcfce7; color: #166534; }
+    .badge-purple { background: #f3e8ff; color: #6b21a8; }
+    .badge-amber { background: #fef3c7; color: #92400e; }
+
+    /* Highlights & Bullet lists */
+    ul {
+      margin-left: 16px;
+      margin-bottom: 6px;
+      font-size: 9pt;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+
+    /* SVG Containers */
+    .diagram-container {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 10px;
+      margin: 8px 0;
+      text-align: center;
+      page-break-inside: avoid;
+    }
+
+    .diagram-caption {
+      font-size: 7.5pt;
+      color: #64748b;
+      font-weight: 600;
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+
+    .footer {
+      margin-top: 18px;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 8px;
+      font-size: 8pt;
+      color: #94a3b8;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div>
+        <h1>Paulo Marcos Ordonha da Silva</h1>
+        <div class="title-role">Analytics Engineer | AI-Native Analytics | Tag Governance & Modern Data Lake</div>
+      </div>
+    </div>
+    <div class="contact-info">
+      <span>📍 Ourinhos, SP</span>
+      <span>📞 +55 16 98107-2126</span>
+      <span>✉️ marcos.ordonha@gmail.com</span>
+      <span>🔗 <a href="https://linkedin.com/in/paulo-marcos-ordonha">linkedin.com/in/paulo-marcos-ordonha</a></span>
+      <span>🎓 Ciência de Dados (UNIVESP) | Ex-ICMC USP</span>
+    </div>
+  </div>
+
+  <!-- SUMMARY BOX -->
+  <div class="summary-box">
+    <strong>Resumo Executivo:</strong> Profissional de Dados & Analytics com trajetória ponta a ponta: desde a governança e coleta precisa de dados em ecossistemas Web e Mobile complexos (SDKs, DataLayer, GTM Server-Side, CAPI) até a engenharia moderna de dados em nuvem (BigQuery, Dataform sob arquitetura medalhão) e automações com <strong>Agentic Analytics</strong>. Experiência técnica comprovada em clientes líderes nos setores de <strong>varejo, cosméticos, telefonia, imobiliário, funerário e financeiro</strong>.
+  </div>
+
+  <!-- TIMELINE SVG -->
+  <div class="diagram-container">
+    <svg width="100%" height="60" viewBox="0 0 760 60" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#3b82f6" />
+          <stop offset="50%" stop-color="#6366f1" />
+          <stop offset="100%" stop-color="#059669" />
+        </linearGradient>
+      </defs>
+      <!-- Base Line -->
+      <line x1="40" y1="30" x2="720" y2="30" stroke="url(#lineGrad)" stroke-width="4" stroke-linecap="round" />
+      
+      <!-- Node 1: Raccoon Web Analytics -->
+      <circle cx="80" cy="30" r="7" fill="#2563eb" stroke="#ffffff" stroke-width="3" />
+      <text x="80" y="15" font-size="8" font-weight="700" text-anchor="middle" fill="#1e293b">2021 - 2022</text>
+      <text x="80" y="48" font-size="7.5" font-weight="600" text-anchor="middle" fill="#475569">Raccoon (Web Analytics)</text>
+
+      <!-- Node 2: Raccoon Tracking Solutions -->
+      <circle cx="260" cy="30" r="7" fill="#2563eb" stroke="#ffffff" stroke-width="3" />
+      <text x="260" y="15" font-size="8" font-weight="700" text-anchor="middle" fill="#1e293b">2022 - 2023</text>
+      <text x="260" y="48" font-size="7.5" font-weight="600" text-anchor="middle" fill="#475569">Tracking Solutions & CAPI</text>
+
+      <!-- Node 3: Media.Monks -->
+      <circle cx="430" cy="30" r="7" fill="#4f46e5" stroke="#ffffff" stroke-width="3" />
+      <text x="430" y="15" font-size="8" font-weight="700" text-anchor="middle" fill="#1e293b">2023 - 2024</text>
+      <text x="430" y="48" font-size="7.5" font-weight="600" text-anchor="middle" fill="#475569">Media.Monks (Server-Side/LATAM)</text>
+
+      <!-- Node 4: i-Cherry TIM -->
+      <circle cx="580" cy="30" r="7" fill="#7c3aed" stroke="#ffffff" stroke-width="3" />
+      <text x="580" y="15" font-size="8" font-weight="700" text-anchor="middle" fill="#1e293b">2024</text>
+      <text x="580" y="48" font-size="7.5" font-weight="600" text-anchor="middle" fill="#475569">i-Cherry (Mobile / Flutter)</text>
+
+      <!-- Node 5: House of Hagens -->
+      <circle cx="690" cy="30" r="7" fill="#059669" stroke="#ffffff" stroke-width="3" />
+      <text x="690" y="15" font-size="8" font-weight="700" text-anchor="middle" fill="#065f46">2025 - 2026</text>
+      <text x="690" y="48" font-size="7.5" font-weight="700" text-anchor="middle" fill="#065f46">Hagens (Analytics Engineer)</text>
+    </svg>
+    <div class="diagram-caption">Evolução de Atuação: Coleta e Governança ➔ Engenharia Medalhão ➔ Agentic Analytics</div>
+  </div>
+
+  <!-- MATRIZ DE COMPETÊNCIAS -->
+  <h2><span class="section-badge"></span> Matriz de Especialidades & Stack Tecnológico</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 28%;">Domínio / Especialidade</th>
+        <th style="width: 32%;">Ferramentas & Tecnologias</th>
+        <th style="width: 40%;">Aplicações Práticas & Impacto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Data Collection & Tracking</strong></td>
+        <td>GTM (Web & Server-Side), DataLayer, JavaScript/TS, Firebase SDK, Android Studio, ADB</td>
+        <td>Planos de mensuração para e-commerces de alto volume, CAPI Meta/Pinterest, validação de telemetria mobile nativa e Flutter.</td>
+      </tr>
+      <tr>
+        <td><strong>Analytics Engineering</strong></td>
+        <td>Google BigQuery, Dataform (SQLX), SQL Avançado, Python, Arquitetura Medalhão</td>
+        <td>Pipelines ELT incrementais com janela lookback de 7 dias, deduplicação por chave composta, particionamento e assertions.</td>
+      </tr>
+      <tr>
+        <td><strong>Qualidade & Observabilidade</strong></td>
+        <td>GCP Cloud Run, Cloud Monitoring, Slack Webhooks, Core Web Vitals (LCP/INP/TBT)</td>
+        <td>Monitoramento contínuo de tags, contenção de scripts de terceiros, expurgo de tags legadas e governança de privacidade LGPD.</td>
+      </tr>
+      <tr>
+        <td><strong>BI & Agentic Analytics</strong></td>
+        <td>Metabase (API & MCP), Looker Studio, Claude Code, GitHub Actions, CRM (HubSpot/SFDC)</td>
+        <td>Dashboards executivos e intraday de conversão de funis; workflows autônomos com LLMs e MCP integrados ao Data Lake.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- BLOCO RACCOON / MEDIA.MONKS -->
+  <h2><span class="section-badge"></span> Ciclo 1: Raccoon & Media.Monks (2021 – 2024)</h2>
+
+  <!-- Case 1: Natura e Avon -->
+  <div class="project-card">
+    <div class="project-header">
+      <div class="project-title">1. Governança de Tracking Enterprise & Resolução de Atribuição (Natura & AVON LATAM)</div>
+      <span class="project-tag">E-commerce • Server-Side • DataLayer</span>
+    </div>
+    <div class="project-grid">
+      <div class="challenge-box">
+        <div class="box-title">Desafio Técnico</div>
+        Discrepâncias severas de conversão e receita entre o front-end dos e-commerces da Natura e AVON (Brasil e LATAM) e os relatórios analíticos, agravadas por bloqueadores de anúncios, restrições do Safari/ITP e quebras de sessão em gateways de pagamento.
+      </div>
+      <div class="solution-box">
+        <div class="box-title">Solução Implementada</div>
+        Estruturação de um plano de mensuração unificado; migração de infraestrutura de client-side para <strong>GTM Server-Side</strong> e integração de APIs de Conversão (<strong>Meta CAPI</strong> e <strong>Pinterest CAPI</strong>); auditoria e reconciliação diária de volumetria GA4 x BigQuery para modelos de LTV/CPA.
+      </div>
+    </div>
+
+    <!-- SVG Arquitetura Natura/Avon -->
+    <div class="diagram-container">
+      <svg width="100%" height="80" viewBox="0 0 720 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="20" width="130" height="42" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+        <text x="75" y="38" font-size="8.5" font-weight="700" text-anchor="middle" fill="#0f172a">E-commerce Natura/Avon</text>
+        <text x="75" y="52" font-size="7" text-anchor="middle" fill="#64748b">DataLayer E-commerce</text>
+
+        <path d="M 140 41 L 180 41" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)" />
+
+        <rect x="180" y="20" width="120" height="42" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+        <text x="240" y="38" font-size="8.5" font-weight="700" text-anchor="middle" fill="#1e40af">GTM Web Client</text>
+        <text x="240" y="52" font-size="7" text-anchor="middle" fill="#2563eb">Custom JS & Triggers</text>
+
+        <path d="M 300 41 L 340 41" stroke="#2563eb" stroke-width="2" />
+
+        <rect x="340" y="15" width="140" height="52" rx="6" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.5" />
+        <text x="410" y="34" font-size="8.5" font-weight="700" text-anchor="middle" fill="#3730a3">GTM Server-Side</text>
+        <text x="410" y="47" font-size="7" text-anchor="middle" fill="#4338ca">GCP Cloud Run / First-party</text>
+        <text x="410" y="59" font-size="6.5" text-anchor="middle" fill="#6366f1">Recuperação de Cookies / ITP</text>
+
+        <path d="M 480 30 L 530 20" stroke="#059669" stroke-width="2" />
+        <path d="M 480 52 L 530 62" stroke="#2563eb" stroke-width="2" />
+
+        <rect x="530" y="5" width="175" height="32" rx="5" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5" />
+        <text x="617" y="22" font-size="8" font-weight="700" text-anchor="middle" fill="#15803d">Meta CAPI & Pinterest CAPI</text>
+        <text x="617" y="32" font-size="6.5" text-anchor="middle" fill="#166534">Conversões de Mídia Imunes a AdBlock</text>
+
+        <rect x="530" y="45" width="175" height="32" rx="5" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" />
+        <text x="617" y="59" font-size="8" font-weight="700" text-anchor="middle" fill="#334155">GA4 ➔ BigQuery Data Lake</text>
+        <text x="617" y="70" font-size="6.5" text-anchor="middle" fill="#64748b">Raw Data para Modelos de LTV / CAC</text>
+      </svg>
+      <div class="diagram-caption">Arquitetura Híbrida de Coleta: GTM Web + Server-Side + APIs de Conversão e BigQuery</div>
+    </div>
+
+    <ul>
+      <li><strong>Resultados:</strong> Eliminação de 90%+ das perdas de atribuição decorrentes de ITP no Safari; garantia de paridade volumétrica superior a 98% entre os dados transacionais de back-office e os registros do BigQuery; aceleração de ritos de homologação via Kanban/Jira com squads ágeis de tecnologia.</li>
+    </ul>
+  </div>
+
+  <!-- Case 2: TIM Meu TIM -->
+  <div class="project-card">
+    <div class="project-header">
+      <div class="project-title">2. Mobile Analytics & Homologação de SDKs na Migração Flutter (TIM — App Meu TIM)</div>
+      <span class="project-tag">Mobile • Firebase SDK • Flutter • Android Studio</span>
+    </div>
+    <div class="project-grid">
+      <div class="challenge-box">
+        <div class="box-title">Desafio Técnico</div>
+        Garantir a precisão e governança da telemetria durante a migração integral da base de código do aplicativo nativo (Kotlin e Swift) para <strong>Flutter</strong>, sem perder a continuidade dos modelos analíticos de conversão diária e mensal de planos e recargas.
+      </div>
+      <div class="solution-box">
+        <div class="box-title">Solução Implementada</div>
+        Especificação de planos de tagueamento mobile; validação rigorosa via <strong>Android Studio / ADB</strong> no modo verbose (<code>adb shell setprop log.tag.FA-SVC VERBOSE</code>); testes de jornada por plano (Controle, Pós, Família); e modelagem de atribuição por canal de aquisição (Google Play Store vs GA4).
+      </div>
+    </div>
+    <ul>
+      <li><strong>Resultados:</strong> Paridade total na contabilização de conversões de recargas e ativações entre a versão nativa e a versão Flutter desenvolvida com a Accenture; redução de chamados de inconsistência de dados a zero no pós-lançamento.</li>
+    </ul>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- BLOCO HOUSE OF HAGENS -->
+  <h2><span class="section-badge"></span> Ciclo 2: House of Hagens (2025 – 2026)</h2>
+
+  <!-- Case 3: Grupo Zelo -->
+  <div class="project-card">
+    <div class="project-header">
+      <div class="project-title">3. Data Lake Medalhão & Pipelines ELT Incrementais em Dataform (Grupo Zelo)</div>
+      <span class="project-tag">Analytics Engineering • BigQuery • Dataform • Medalhão</span>
+    </div>
+    <div class="project-grid">
+      <div class="challenge-box">
+        <div class="box-title">Desafio Técnico</div>
+        Consolidar dados altamente fragmentados de investimentos de mídia e conversões (Google Ads, Meta Ads Instant Forms, Pixel de site, leads telefônicos/WhatsApp e GA4 cross-channel) para um grupo nacional do segmento funerário com dezenas de contas e cemitérios.
+      </div>
+      <div class="solution-box">
+        <div class="box-title">Solução Implementada</div>
+        Engenharia de pipeline ELT no <strong>Dataform (SQLX)</strong> com arquitetura medalhão; tabelas Gold (<code>gld_marketing_performance_grupo_zelo</code> e <code>gld_leads_zelo</code>) incrementais com <strong>janela de lookback de 7 dias</strong>, particionamento por <code>date</code>, clustering por <code>source</code>/<code>campaign_id</code>, deduplicação e asserções de qualidade.
+      </div>
+    </div>
+
+    <!-- SVG Data Lake Medalhão -->
+    <div class="diagram-container">
+      <svg width="100%" height="95" viewBox="0 0 720 95" xmlns="http://www.w3.org/2000/svg">
+        <!-- Bronze -->
+        <rect x="10" y="15" width="130" height="70" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" />
+        <text x="75" y="32" font-size="8.5" font-weight="700" text-anchor="middle" fill="#475569">CAMADA RAW / BRONZE</text>
+        <text x="75" y="47" font-size="7.5" text-anchor="middle" fill="#64748b">• Google Ads API</text>
+        <text x="75" y="59" font-size="7.5" text-anchor="middle" fill="#64748b">• Meta Graph API (Forms)</text>
+        <text x="75" y="71" font-size="7.5" text-anchor="middle" fill="#64748b">• GA4 Export (BigQuery)</text>
+
+        <path d="M 140 50 L 180 50" stroke="#3b82f6" stroke-width="2" />
+
+        <!-- Silver -->
+        <rect x="180" y="15" width="145" height="70" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5" />
+        <text x="252" y="32" font-size="8.5" font-weight="700" text-anchor="middle" fill="#334155">CAMADA SILVER (Limpeza)</text>
+        <text x="252" y="47" font-size="7.5" text-anchor="middle" fill="#475569">• slv_gads_performance</text>
+        <text x="252" y="59" font-size="7.5" text-anchor="middle" fill="#475569">• slv_meta_performance</text>
+        <text x="252" y="71" font-size="7.5" text-anchor="middle" fill="#475569">• slv_dim_campaigns</text>
+
+        <path d="M 325 50 L 365 50" stroke="#6366f1" stroke-width="2" />
+
+        <!-- Dataform -->
+        <rect x="365" y="10" width="150" height="78" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+        <text x="440" y="28" font-size="8.5" font-weight="700" text-anchor="middle" fill="#1e40af">DATAFORM PIPELINE</text>
+        <text x="440" y="42" font-size="7" text-anchor="middle" fill="#2563eb">Incremental Lookback 7 Dias</text>
+        <text x="440" y="54" font-size="7" text-anchor="middle" fill="#2563eb">Pre-ops DELETE idempotente</text>
+        <text x="440" y="66" font-size="7" text-anchor="middle" fill="#1e40af">Assertions: uniqueKey, nonNull</text>
+        <text x="440" y="78" font-size="6.5" text-anchor="middle" fill="#64748b">Fallback Join: Nome > ID</text>
+
+        <path d="M 515 50 L 555 50" stroke="#059669" stroke-width="2" />
+
+        <!-- Gold -->
+        <rect x="555" y="15" width="155" height="70" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5" />
+        <text x="632" y="32" font-size="8.5" font-weight="700" text-anchor="middle" fill="#15803d">CAMADA GOLD & BI</text>
+        <text x="632" y="47" font-size="7" text-anchor="middle" fill="#166534">• gld_marketing_performance</text>
+        <text x="632" y="59" font-size="7" text-anchor="middle" fill="#166534">• gld_leads_zelo (Particionado)</text>
+        <text x="632" y="71" font-size="7" font-weight="700" text-anchor="middle" fill="#065f46">Dashboards Metabase & Looker</text>
+      </svg>
+      <div class="diagram-caption">Fluxo de Dados Medalhão: Ingestão ➔ Normalização ➔ Regras Dataform com Assertions ➔ Camada Gold</div>
+    </div>
+
+    <ul>
+      <li><strong>Trecho de Engenharia em Produção:</strong>
+        <span style="font-family: monospace; font-size: 7.5pt; color: #0f172a; background: #f1f5f9; padding: 2px 4px; border-radius: 3px;">
+          assertions: { uniqueKey: ["date", "source", "campaign_id", "campaign_name", "traffic_type"], nonNull: ["date", "source"] }
+        </span>
+      </li>
+      <li><strong>Resultados:</strong> Eliminação de processamento redundante e redução de custos no BigQuery com particionamento diário e clustering; unificação em tempo real de métricas de CPA e CPL por cemitério e canal de mídia.</li>
+    </ul>
+  </div>
+
+  <!-- Case 4: FastShop Empresas -->
+  <div class="project-card">
+    <div class="project-header">
+      <div class="project-title">4. Cross-Domain Tracking Seguro com Hashing SHA-256 no Cliente (FastShop Empresas)</div>
+      <span class="project-tag">Segurança • SubtleCrypto • postMessage • LGPD</span>
+    </div>
+    <div class="project-grid">
+      <div class="challenge-box">
+        <div class="box-title">Desafio Técnico</div>
+        Rastrear a geração de leads B2B em landing pages de locação e nuvem (<code>empresas.fastshop.com.br/cloud</code> e <code>/locacao</code>) que operavam com formulários encapsulados em iframes hospedados em domínios de desenvolvimento/middleware, sem expor dados pessoais (PII) e sem registrar conversões falsas.
+      </div>
+      <div class="solution-box">
+        <div class="box-title">Solução Implementada</div>
+        Implementação de mensageria segura cross-domain com <strong><code>window.postMessage</code></strong>; amarração do disparo de conversão exclusivamente após validação <strong>HTTP 200 OK</strong> do endpoint do middleware (<code>/lead</code>); e anonimização de dados via <strong>SHA-256 no client</strong> com a Web Cryptography API nativa (<code>crypto.subtle</code>) antes do envio ao DataLayer para alimentar o Enhanced Conversions do Google Ads e Meta CAPI.
+      </div>
+    </div>
+
+    <!-- SVG Sequência FastShop -->
+    <div class="diagram-container">
+      <svg width="100%" height="90" viewBox="0 0 720 90" xmlns="http://www.w3.org/2000/svg">
+        <!-- Labels -->
+        <text x="60" y="15" font-size="7.5" font-weight="700" text-anchor="middle" fill="#475569">USUÁRIO B2B</text>
+        <text x="210" y="15" font-size="7.5" font-weight="700" text-anchor="middle" fill="#2563eb">IFRAME FORMULÁRIO</text>
+        <text x="390" y="15" font-size="7.5" font-weight="700" text-anchor="middle" fill="#d97706">MIDDLEWARE API</text>
+        <text x="560" y="15" font-size="7.5" font-weight="700" text-anchor="middle" fill="#059669">DOMÍNIO PAI (GTM / CAPI)</text>
+
+        <!-- Vertical Lifelines -->
+        <line x1="60" y1="22" x2="60" y2="85" stroke="#cbd5e1" stroke-dasharray="2,2" />
+        <line x1="210" y1="22" x2="210" y2="85" stroke="#cbd5e1" stroke-dasharray="2,2" />
+        <line x1="390" y1="22" x2="390" y2="85" stroke="#cbd5e1" stroke-dasharray="2,2" />
+        <line x1="560" y1="22" x2="560" y2="85" stroke="#cbd5e1" stroke-dasharray="2,2" />
+
+        <!-- Steps -->
+        <line x1="60" y1="32" x2="210" y2="32" stroke="#475569" stroke-width="1.5" />
+        <text x="135" y="28" font-size="6.5" font-weight="600" text-anchor="middle" fill="#475569">1. Submit form (/cloud, /locacao)</text>
+
+        <line x1="210" y1="42" x2="390" y2="42" stroke="#d97706" stroke-width="1.5" />
+        <text x="300" y="39" font-size="6.5" font-weight="600" text-anchor="middle" fill="#b45309">2. POST /lead payload</text>
+
+        <line x1="390" y1="52" x2="210" y2="52" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="3,3" />
+        <text x="300" y="50" font-size="6.5" font-weight="700" text-anchor="middle" fill="#15803d">3. 200 OK (Validação de sucesso)</text>
+
+        <rect x="175" y="56" width="70" height="12" rx="3" fill="#fef3c7" stroke="#f59e0b" />
+        <text x="210" y="65" font-size="6" font-weight="700" text-anchor="middle" fill="#b45309">SubtleCrypto SHA-256</text>
+
+        <line x1="210" y1="74" x2="560" y2="74" stroke="#2563eb" stroke-width="1.5" />
+        <text x="385" y="71" font-size="6.5" font-weight="700" text-anchor="middle" fill="#1d4ed8">4. postMessage({ event: 'generate_lead', hashed_pii })</text>
+
+        <rect x="525" y="75" width="70" height="11" rx="3" fill="#dcfce7" stroke="#16a34a" />
+        <text x="560" y="83" font-size="6" font-weight="700" text-anchor="middle" fill="#166534">dataLayer.push ➔ CAPI / GA4</text>
+      </svg>
+      <div class="diagram-caption">Diagrama de Sequência: Verificação 200 OK, Criptografia SHA-256 no Client e PostMessage Seguro</div>
+    </div>
+
+    <ul>
+      <li><strong>Resultados:</strong> Eliminação de 100% dos disparos de conversão por abandono ou erro de formulário; conformidade total com as normas da LGPD de proteção de dados sensíveis; aumento do match rate nas campanhas de Enhanced Conversions.</li>
+    </ul>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- Case 5: Dock Otimização GTM -->
+  <div class="project-card">
+    <div class="project-header">
+      <div class="project-title">5. Auditoria de Contêiner & Otimização de Core Web Vitals (Dock)</div>
+      <span class="project-tag">Core Web Vitals • GTM Cleanup • LGPD / AdOpt • Performance</span>
+    </div>
+    <div class="project-grid">
+      <div class="challenge-box">
+        <div class="box-title">Desafio Técnico</div>
+        Contêiner GTM (<code>GTM-N6W2MTJ</code>) sobrecarregado com centenas de tags legadas e bibliotecas obsoletas, competindo diretamente com a CPU no carregamento inicial da página e degradando as métricas de Core Web Vitals (LCP, INP e TBT).
+      </div>
+      <div class="solution-box">
+        <div class="box-title">Solução Implementada</div>
+        Auditoria diagnóstica integral; descarte de <strong>81 tags legadas</strong> de Universal Analytics (Pasta 500) e exclusão do Google Optimize descontinuado; desduplicação de gravadores de sessão (Clarity vs Hotjar); reprogramação de acionadores de mídia paga para <strong>Window Loaded (lazy load)</strong>; e regularização da tag CMP AdOpt.
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Elemento Auditado</th>
+          <th style="width: 25%;">Problema Identificado</th>
+          <th style="width: 25%;">Ação Técnica Executada</th>
+          <th style="width: 30%;">Impacto na Performance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Pasta 500 (UA)</strong></td>
+          <td>81 tags legadas ativas gerando overhead de download</td>
+          <td>Remoção em lote de tags, acionadores e variáveis órfãs</td>
+          <td>Redução expressiva do tamanho do arquivo final <code>gtm.js</code></td>
+        </tr>
+        <tr>
+          <td><strong>Google Optimize</strong></td>
+          <td>Ferramenta descontinuada injetando scripts de flicker</td>
+          <td>Exclusão definitiva da tag ID 265</td>
+          <td>Eliminação de bloqueios de renderização e estabilidade do LCP</td>
+        </tr>
+        <tr>
+          <td><strong>Microsoft Clarity & Hotjar</strong></td>
+          <td>Dois scripts concorrentes de gravação de tela ativos</td>
+          <td>Desduplicação para script único acionado em Window Loaded</td>
+          <td>Queda substancial no Total Blocking Time (TBT) em dispositivos móveis</td>
+        </tr>
+        <tr>
+          <td><strong>AdOpt (CMP LGPD)</strong></td>
+          <td>Tag crítica de consentimento encontrada em estado pausado</td>
+          <td>Reativação com auditoria de conformidade de cookies</td>
+          <td>Garantia de segurança jurídica e integridade do consent mode</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Case 6: Águia Branca & Observabilidade / Agentic Analytics -->
+  <div class="project-card">
+    <div class="project-header">
+      <div class="project-title">6. Modelagem Horária Intraday (Águia Branca) & Agentic Analytics em Produção</div>
+      <span class="project-tag">BigQuery Intraday • Cloud Run • Slack Webhooks • MCP Metabase</span>
+    </div>
+    <div class="project-grid">
+      <div class="challenge-box">
+        <div class="box-title">Desafio Técnico</div>
+        Falta de visibilidade intraday do funil de e-commerce de passagens de ônibus da Viação Águia Branca; vulnerabilidade de quedas silenciosas de tracking em produção sem avisos prévios aos times de tráfego; e lentidão na criação manual de relatórios executivos.
+      </div>
+      <div class="solution-box">
+        <div class="box-title">Solução Implementada</div>
+        Construção da modelagem horária de funil <code>gld_marketing.gld_intraday_funil_model</code> (view_item ➔ purchase por hora/cidade); arquitetura serverless no <strong>GCP Cloud Run</strong> para monitoramento contínuo de tags e alertas imediatos no Slack; e adoção de <strong>Agentic Analytics</strong> (Claude Code integrado via MCP ao Metabase).
+      </div>
+    </div>
+
+    <!-- SVG Águia Branca & Agentic -->
+    <div class="diagram-container">
+      <svg width="100%" height="80" viewBox="0 0 720 80" xmlns="http://www.w3.org/2000/svg">
+        <!-- Funil Intraday -->
+        <rect x="10" y="10" width="330" height="60" rx="6" fill="#f8fafc" stroke="#3b82f6" stroke-width="1.5" />
+        <text x="175" y="26" font-size="8" font-weight="700" text-anchor="middle" fill="#1e40af">MODELO INTRADAY ÁGUIA BRANCA (BigQuery)</text>
+        <text x="175" y="42" font-size="7" text-anchor="middle" fill="#334155">view_item ➔ add_to_cart ➔ begin_checkout ➔ purchase</text>
+        <text x="175" y="56" font-size="6.5" text-anchor="middle" fill="#64748b">Visão Horária ("14h") • Canal de Mídia • Estado & Cidade</text>
+
+        <!-- Divider -->
+        <line x1="360" y1="10" x2="360" y2="70" stroke="#cbd5e1" stroke-dasharray="3,3" />
+
+        <!-- Observabilidade & Agentic -->
+        <rect x="380" y="10" width="330" height="60" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5" />
+        <text x="545" y="26" font-size="8" font-weight="700" text-anchor="middle" fill="#15803d">OBSERVABILIDADE CONTÍNUA & AGENTIC ANALYTICS</text>
+        <text x="545" y="42" font-size="7" text-anchor="middle" fill="#166534">GTM + Cloud Run ➔ Slack Alerts (Detecção de Quedas de Tracking)</text>
+        <text x="545" y="56" font-size="6.5" text-anchor="middle" fill="#065f46">Claude Code + MCP Metabase ➔ Automação de Cards e Insights Gold</text>
+      </svg>
+      <div class="diagram-caption">Modelagem de Funil Horário e Stack Moderno de Observabilidade e IA Agentic</div>
+    </div>
+  </div>
+
+  <!-- SÍNTESE CONSOLIDADA DE ENTREGAS -->
+  <h2><span class="section-badge"></span> Quadro Síntese de Entregas & Indicadores de Impacto</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 15%;">Pilar</th>
+        <th style="width: 25%;">Clientes / Projetos</th>
+        <th style="width: 35%;">Principais Realizações Técnicas</th>
+        <th style="width: 25%;">Impacto de Negócio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Server-Side & CAPI</strong></td>
+        <td>Natura, AVON LATAM, FastShop</td>
+        <td>Implementação de GTM Server-Side, CAPI Meta/Pinterest e hashing SHA-256 (SubtleCrypto).</td>
+        <td>Recuperação de atribuição perdida por ITP/AdBlockers; 100% de compliance LGPD.</td>
+      </tr>
+      <tr>
+        <td><strong>Analytics Engineering</strong></td>
+        <td>Grupo Zelo, Águia Branca, Insider</td>
+        <td>Dataform sob arquitetura medalhão, partições por data, clustering, assertions e pipelines intraday.</td>
+        <td>Deduplicação de dados, redução de custos no BigQuery e relatórios executivos em tempo real.</td>
+      </tr>
+      <tr>
+        <td><strong>Mobile Telemetry</strong></td>
+        <td>TIM (App Meu TIM)</td>
+        <td>Homologação de Firebase SDK e GA4 via Android Studio / ADB na migração para Flutter.</td>
+        <td>Zero discrepâncias no tagueamento de recargas e contratação de planos pós-deploy.</td>
+      </tr>
+      <tr>
+        <td><strong>Web Performance & Audit</strong></td>
+        <td>Dock, FastShop Empresas</td>
+        <td>Expurgo de 81 tags de UA e Optimize; desduplicação de Clarity/Hotjar; lazy load de scripts.</td>
+        <td>Melhoria substancial no LCP e INP; aumento do Índice de Qualidade em mídia de busca.</td>
+      </tr>
+      <tr>
+        <td><strong>Agentic & Observability</strong></td>
+        <td>House of Hagens (Interno & Clientes)</td>
+        <td>Monitoramento em Cloud Run com alertas no Slack; fluxos agentic com Claude Code e Metabase MCP.</td>
+        <td>Mitigação imediata de incidentes de tracking e entrega ágil de consultas sobre data lakes.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Portfólio Profissional de Analytics Engineering — Paulo Marcos Ordonha da Silva</span>
+    <span>Dados, Código e Arquiteturas validados a partir de projetos reais</span>
+  </div>
+
+</body>
+</html>
