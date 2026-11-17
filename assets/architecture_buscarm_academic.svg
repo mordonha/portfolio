@@ -68,7 +68,7 @@
     <text x="22" y="160" font-family="Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#1B5E20">Busca e Normalização</text>
     <text x="22" y="176" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Indexador NomeNormalizer: minúsculas, sem acento</text>
     <text x="22" y="190" font-family="Roboto, sans-serif" font-size="8.5" fill="#5F6368">Armazena nome_completo e nome_busca</text>
-    <text x="22" y="204" font-family="Roboto, sans-serif" font-size="8.5" fill="#33691E">Busca otimizada em milissegundos sobre 6.000+ RMs</text>
+    <text x="22" y="204" font-family="Roboto, sans-serif" font-size="8.5" fill="#33691E">Busca otimizada em milissegundos sobre milhares de RMs</text>
 
     <!-- Audit & Soft Delete -->
     <rect x="12" y="230" width="226" height="70" rx="8" fill="#E8F5E9"/>

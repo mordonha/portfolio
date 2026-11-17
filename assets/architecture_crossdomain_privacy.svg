@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 336" width="100%" height="100%" role="img" aria-label="TRACKING CROSS-DOMAIN — PRIVACIDADE E CONFIRMAÇÃO DE PERSISTÊNCIA">
+  <rect width="960" height="336" rx="16" fill="#F8FAFC"/>
+  <rect x="1" y="1" width="958" height="334" rx="15" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="0" y="0" width="960" height="52" rx="16" fill="#0F172A"/>
+  <rect x="0" y="36" width="960" height="16" fill="#0F172A"/>
+  <text x="24" y="33" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">TRACKING CROSS-DOMAIN — PRIVACIDADE E CONFIRMAÇÃO DE PERSISTÊNCIA</text>
+  <rect x="793" y="14" width="143" height="24" rx="12" fill="#1E293B"/>
+  <text x="864.5" y="31" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#93C5FD" text-anchor="middle">PRIVACY BY DESIGN</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <g>
+    <rect x="30.0" y="78" width="211.5" height="236" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="30.0" y="78" width="211.5" height="38" rx="12" fill="#475569"/>
+    <rect x="30.0" y="104" width="211.5" height="12" fill="#475569"/>
+    <text x="135.75" y="102" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">USUÁRIO</text>
+    <text x="44.0" y="144" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Formulário B2B</text>
+    <text x="44.0" y="159" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Landing page</text>
+    <text x="44.0" y="174" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Iframe encapsulado</text>
+    <text x="44.0" y="198" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Privacidade</text>
+    <text x="44.0" y="213" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Consentimento</text>
+    <text x="44.0" y="228" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Dados minimizados</text>
+  </g>
+  <path d="M 242.5 196.0 L 256.5 196.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="259.5" y="78" width="211.5" height="236" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="259.5" y="78" width="211.5" height="38" rx="12" fill="#1D4ED8"/>
+    <rect x="259.5" y="104" width="211.5" height="12" fill="#1D4ED8"/>
+    <text x="365.25" y="102" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">IFRAME</text>
+    <text x="273.5" y="144" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Captura</text>
+    <text x="273.5" y="159" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Validação de campos</text>
+    <text x="273.5" y="174" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Pseudonimização</text>
+    <text x="273.5" y="198" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Mensageria</text>
+    <text x="273.5" y="213" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Evento estruturado</text>
+  </g>
+  <path d="M 472.0 196.0 L 486.0 196.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="489.0" y="78" width="211.5" height="236" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="489.0" y="78" width="211.5" height="38" rx="12" fill="#B45309"/>
+    <rect x="489.0" y="104" width="211.5" height="12" fill="#B45309"/>
+    <text x="594.75" y="102" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">BACKEND</text>
+    <text x="503.0" y="144" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Persistência</text>
+    <text x="503.0" y="159" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Envio ao endpoint</text>
+    <text x="503.0" y="174" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Confirmação de sucesso</text>
+    <text x="503.0" y="198" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Resiliência</text>
+    <text x="503.0" y="213" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Falha não gera conversão</text>
+  </g>
+  <path d="M 701.5 196.0 L 715.5 196.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="718.5" y="78" width="211.5" height="236" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="718.5" y="78" width="211.5" height="38" rx="12" fill="#15803D"/>
+    <rect x="718.5" y="104" width="211.5" height="12" fill="#15803D"/>
+    <text x="824.25" y="102" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">DOMÍNIO PAI</text>
+    <text x="732.5" y="144" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Conversão</text>
+    <text x="732.5" y="159" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">DataLayer</text>
+    <text x="732.5" y="174" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">GA4 e CAPI</text>
+    <text x="732.5" y="198" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Mídia</text>
+    <text x="732.5" y="213" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Enhanced Conversions</text>
+  </g>
+</svg>

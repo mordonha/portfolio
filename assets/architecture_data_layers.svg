@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 402" width="100%" height="100%" role="img" aria-label="MODELO DE DADOS EM CAMADAS — DA INGESTÃO AO CONSUMO">
+  <rect width="960" height="402" rx="16" fill="#F8FAFC"/>
+  <rect x="1" y="1" width="958" height="400" rx="15" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="0" y="0" width="960" height="52" rx="16" fill="#0F172A"/>
+  <rect x="0" y="36" width="960" height="16" fill="#0F172A"/>
+  <text x="24" y="33" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">MODELO DE DADOS EM CAMADAS — DA INGESTÃO AO CONSUMO</text>
+  <rect x="765" y="14" width="171" height="24" rx="12" fill="#1E293B"/>
+  <text x="850.5" y="31" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#93C5FD" text-anchor="middle">ANALYTICS ENGINEERING</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <g>
+    <rect x="30.0" y="78" width="211.5" height="302" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="30.0" y="78" width="211.5" height="38" rx="12" fill="#B45309"/>
+    <rect x="30.0" y="104" width="211.5" height="12" fill="#B45309"/>
+    <text x="135.75" y="102" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">FONTES</text>
+    <text x="44.0" y="144" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Mídia paga</text>
+    <text x="44.0" y="159" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">APIs das plataformas</text>
+    <text x="44.0" y="174" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Métricas diárias</text>
+    <text x="44.0" y="198" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Leads</text>
+    <text x="44.0" y="213" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Site e formulários</text>
+    <text x="44.0" y="228" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Mensageria</text>
+    <text x="44.0" y="252" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Transações</text>
+    <text x="44.0" y="267" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Pedidos e receita</text>
+  </g>
+  <path d="M 242.5 229.0 L 256.5 229.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="259.5" y="78" width="211.5" height="302" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="259.5" y="78" width="211.5" height="38" rx="12" fill="#475569"/>
+    <rect x="259.5" y="104" width="211.5" height="12" fill="#475569"/>
+    <text x="365.25" y="102" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">NORMALIZAÇÃO</text>
+    <text x="273.5" y="144" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Tipagem e moeda</text>
+    <text x="273.5" y="159" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Padronização de campos</text>
+    <text x="273.5" y="183" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Deduplicação</text>
+    <text x="273.5" y="198" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Chaves compostas</text>
+    <text x="273.5" y="222" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Dimensões</text>
+    <text x="273.5" y="237" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Correspondência de IDs</text>
+  </g>
+  <path d="M 472.0 229.0 L 486.0 229.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="489.0" y="78" width="211.5" height="302" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="489.0" y="78" width="211.5" height="38" rx="12" fill="#1D4ED8"/>
+    <rect x="489.0" y="104" width="211.5" height="12" fill="#1D4ED8"/>
+    <text x="594.75" y="102" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">TRANSFORMAÇÃO</text>
+    <text x="503.0" y="144" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Incremental</text>
+    <text x="503.0" y="159" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Reprocessamento</text>
+    <text x="503.0" y="174" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Conversões tardias</text>
+    <text x="503.0" y="198" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Qualidade</text>
+    <text x="503.0" y="213" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Unicidade</text>
+    <text x="503.0" y="228" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Não-nulidade</text>
+    <text x="503.0" y="252" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Idempotência</text>
+    <text x="503.0" y="267" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Sem duplicidade</text>
+  </g>
+  <path d="M 701.5 229.0 L 715.5 229.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="718.5" y="78" width="211.5" height="302" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="718.5" y="78" width="211.5" height="38" rx="12" fill="#15803D"/>
+    <rect x="718.5" y="104" width="211.5" height="12" fill="#15803D"/>
+    <text x="824.25" y="102" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">CONSUMO</text>
+    <text x="732.5" y="144" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">BI executivo</text>
+    <text x="732.5" y="159" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Dashboards</text>
+    <text x="732.5" y="183" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Métricas</text>
+    <text x="732.5" y="198" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">CPL e CPA</text>
+    <text x="732.5" y="222" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Decisão</text>
+    <text x="732.5" y="237" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="8.8" fill="#475569">Operação e liderança</text>
+  </g>
+</svg>
