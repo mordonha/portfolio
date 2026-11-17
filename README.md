@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📊 Paulo Marcos Ordonha da Silva
-### **Analytics Engineer | AI-Native Analytics | Data Architecture & Software Engineering**
+### **Analytics Engineer | AI Engineering & Agentic Systems | Data Architecture**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Paulo_Ordonha-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/paulo-marcos-ordonha)
 [![GitHub](https://img.shields.io/badge/GitHub-mordonha-181717?style=for-the-badge&logo=github)](https://github.com/mordonha)
@@ -18,7 +18,7 @@
 
 ## 🎯 Perfil Profissional & Visão Executiva
 
-Profissional de **Dados & Analytics AI-native** com sólida fundamentação em **Ciência de Dados e Engenharia de Software**. Trajetória ponta a ponta: desde a governança e coleta precisa de dados em ecossistemas Web e Mobile complexos (**GTM Server-Side, CAPI, Firebase SDK, DataLayer**) até a modelagem de data lakes analíticos em nuvem sob **arquitetura medalhão (BigQuery, Dataform)**, observabilidade serverless contínua e automações com **Agentic Analytics (Claude Code, MCP)**.
+Profissional de **Dados & Analytics AI-native** com sólida fundamentação em **Ciência de Dados e Engenharia de Software**. Trajetória ponta a ponta: desde a governança e coleta precisa de dados em ecossistemas Web e Mobile complexos (**GTM Server-Side, CAPI, Firebase SDK, DataLayer**) até a modelagem de data lakes analíticos em nuvem sob **arquitetura medalhão (BigQuery, Dataform)**, observabilidade serverless contínua e automações com **Agentic Analytics (Claude Code, MCP)**. Nos últimos meses, aprofundei **engenharia de software assistida por IA** — GCCD, context engineering (`AGENTS.md`/`SKILL.md`), agentes com ferramentas e critérios de avaliação — aplicada em produto próprio (StudyFlow) e em laboratório com Google ADK.
 
 Atuação técnica em projetos de alto impacto em setores de alto volume e ambientes regulados:
 
@@ -29,6 +29,17 @@ Atuação técnica em projetos de alto impacto em setores de alto volume e ambie
 * **Transporte Rodoviário**
 
 > **Confidencialidade e propriedade intelectual.** Os cases são descritos em nível de capacidade e de impacto, sem nomes de clientes ou agências, sem identificadores de contêineres, propriedades, aplicativos ou endpoints, sem esquemas de dados, regras de negócio ou trechos de código proprietários. Métricas são qualitativas ou arredondadas; números específicos só são divulgados com autorização escrita. Nenhum dado pessoal de titulares é publicado; projetos acadêmicos usam dados sintéticos ou anonimizados. Detalhes de implementação podem ser discutidos em entrevista, sob NDA.
+
+---
+
+## 🤖 Foco em IA & Sistemas Agênticos
+
+- **Engenharia de software assistida por IA:** método GCCD (Goal, Context, Constraints, Done-when), especificação antes do código e critérios de aceite verificáveis.
+- **Context engineering:** `AGENTS.md` com fatos duráveis e `SKILL.md` com divulgação progressiva (L1/L2/L3), carregando contexto sob demanda em vez de inflar o prompt.
+- **Agentes com guardrails:** Google ADK, MCP e Claude Code; ferramentas restritas, segredos protegidos e validação de saída antes de produção.
+- **Avaliação e confiabilidade:** testes, assertions, reconciliação e observabilidade — a IA só entra em produção com critério de "feito".
+
+> Case completo: **Case 7 — StudyFlow & Agent Lab**, na Parte 2.
 
 ---
 
@@ -207,7 +218,39 @@ Garantir a precisão da telemetria durante a reescrita técnica completa de um a
 
 ---
 
-# 🎓 PARTE 2: CASES ACADÊMICOS
+# 🤖 PARTE 2: AI ENGINEERING & SISTEMAS AGÊNTICOS
+
+---
+
+### Case 7: StudyFlow & Agent Lab — Engenharia de Software com IA, do Prompt ao Deploy
+> **Contexto:** projeto de formação (Alura + Google) e aplicação própria, sem dados de clientes  
+> **Tecnologias:** Google AI Studio (Gemini), Google ADK, Python, React 19, TypeScript, Vite, Tailwind CSS v4, Google Cloud Run
+
+#### 📌 Contexto & Desafio de Negócio (CRISP-DM: Business Understanding)
+O objetivo era construir um produto real — um app de organização de objetivos de estudo — em uma imersão de engenharia de software com IA, da ideação ao deploy serverless. O desafio não era gerar código: era especificar antes de codar, fornecer contexto suficiente ao modelo, restringir o escopo e definir critérios de aceite verificáveis para não aceitar uma saída "aparentemente boa".
+
+#### ⚙️ Solução: GCCD + Context Engineering + Harness
+* **Especificação antes do código (GCCD):** Goal, Context, Constraints e Done-when em três prompts encadeados (descoberta, requisitos, implementação), com a diretiva "não escreva código ainda" separando requisitos de solução.
+* **Context engineering:** `AGENTS.md` com fatos duráveis (persona, ambiente, convenções, segredos) e `SKILL.md` com divulgação progressiva L1/L2/L3, carregando referências sob demanda em vez de despejar todo o contexto no prompt.
+* **Harness e loop:** ferramentas restritas (somente leitura/escrita de arquivos, sem shell), segredos fora do versionamento, critérios done-when em checkboxes e ciclo de teste/replanejamento.
+* **Produto:** React 19 + TypeScript + Vite + Tailwind v4; `StorageService` para localStorage com tratamento de erro e seed data; modais acessíveis; 10 critérios de aceite validados.
+* **Agente (laboratório):** especificação de agente Google ADK em Python com `SkillToolset`, `EnvironmentToolset`, regra de gating e 7 critérios done-when.
+* **Economia de tokens:** menos iterações de retrabalho, contexto reutilizável e foco em valor por token, não em volume.
+
+<div align="center">
+  <img src="assets/architecture_ai_engineering.svg" alt="Pipeline de engenharia de software com IA: especificação, contexto, construção, validação e entrega" width="100%"/>
+</div>
+
+#### 📈 Resultados & Evidências
+* App StudyFlow com **10/10 critérios de aceite** validados e build/deploy serverless no Cloud Run.
+* Especificação de agente com **7 critérios done-when**, ferramentas restritas e segredos protegidos.
+* **4 diagramas de arquitetura** versionados: especificação, planejamento, implementação e validação.
+* Método reutilizável: GCCD + AGENTS/SKILLS + done-when para novos agentes.
+* Repositório público: [github.com/mordonha/StudyFlow---APP](https://github.com/mordonha/StudyFlow---APP)
+
+---
+
+# 🎓 PARTE 3: CASES ACADÊMICOS
 
 ---
 
@@ -275,6 +318,7 @@ A base teórica e prática do KDD e CRISP-DM consolidada na universidade serve d
 | **Tracking, Telemetria & Tagging** | Google Tag Manager (Web & Server-Side), Meta CAPI, Pinterest CAPI, Firebase Analytics SDK, DataLayer |
 | **Cloud & DevOps** | GCP (Cloud Run, Cloud Monitoring), Docker, GitHub Actions (CI/CD), Flyway, Linux |
 | **BI & Agentic Analytics** | Metabase (API & MCP), Looker Studio, Claude Code, Model Context Protocol (MCP) |
+| **AI Engineering & Agents** | Google AI Studio (Gemini), Google ADK (Python), GCCD, AGENTS.md/SKILL.md, MCP, Claude Code |
 | **Desenvolvimento de Software** | Spring Boot 3.3, Next.js 14, React 18, Hexagonal Architecture, Tesseract OCR |
 
 ---

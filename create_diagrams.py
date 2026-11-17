@@ -344,6 +344,47 @@ DIAGRAMS = {
             },
         ],
     ),
+    "architecture_ai_engineering.svg": render(
+        "ENGENHARIA DE SOFTWARE COM IA — DO PROMPT AO DEPLOY",
+        "AI ENGINEERING",
+        [
+            {
+                "title": "ESPECIFICAÇÃO",
+                "color": AMBER,
+                "items": [
+                    ("GCCD", ["Goal e contexto", "Restrições e done-when"]),
+                ],
+            },
+            {
+                "title": "CONTEXTO",
+                "color": SLATE,
+                "items": [
+                    ("AGENTS + SKILLS", ["L1/L2/L3 sob demanda", "Orçamento de contexto"]),
+                ],
+            },
+            {
+                "title": "CONSTRUÇÃO",
+                "color": BLUE,
+                "items": [
+                    ("Gemini + ADK", ["Agente com ferramentas", "Código assistido"]),
+                ],
+            },
+            {
+                "title": "VALIDAÇÃO",
+                "color": PURPLE,
+                "items": [
+                    ("Done-when", ["Critérios testáveis", "Revisão e replanejamento"]),
+                ],
+            },
+            {
+                "title": "ENTREGA",
+                "color": GREEN,
+                "items": [
+                    ("Cloud Run", ["Deploy serverless", "App publicado"]),
+                ],
+            },
+        ],
+    ),
 }
 
 
